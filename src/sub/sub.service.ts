@@ -3,6 +3,8 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class SubService {
   getRandomNumber(): number {
-    return Math.floor(Math.random() * 100);
+    const num = Math.floor(Math.random() * 100);
+    console.log(num, num, num);
+    return num;
   }
 }
